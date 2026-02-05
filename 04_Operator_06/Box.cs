@@ -33,19 +33,19 @@
             // todo: 박스(0, 0) ~ (10, 10)에 점(x, y)가 포함되는지 확인하는 로직 작성해서 실행해보세요.
             Console.WriteLine("x값을 입력하세요: ");
             string InputX = Console.ReadLine();
-            int ValueX = int.Parse(InputX);
+            int X = int.Parse(InputX);
 
             Console.WriteLine("y값을 입력하세요: ");
             string InputY = Console.ReadLine();
-            int ValueY = int.Parse(InputY);
+            int Y = int.Parse(InputY);
 
-            if ( ((ValueX > 0) && (ValueX < 10)) && ((ValueY > 0) && (ValueY < 10)) )
+            if ( ((0 < X) && (X < 10)) && ((0 < Y) && (Y < 10)) )
             {
-                Console.WriteLine($"점 ({ValueX}, {ValueY})은 박스 안에 포함됨.");
+                Console.WriteLine($"점 ({X}, {Y})은 박스 안에 포함됨.");
             }
             else
             {
-                Console.WriteLine($"점 ({ValueX}, {ValueY})은 박스 안에 포함되지 않음.");
+                Console.WriteLine($"점 ({X}, {Y})은 박스 안에 포함되지 않음.");
             }
         }
     }
