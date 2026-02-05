@@ -20,6 +20,7 @@ namespace DataType
         static void Main(string[] args)
         // 프로그램 시작점.
         // C# 프로그램은 무조건 여기서 시작됨.
+        // static: 객체 없이 실행 가능. (객체 생성 없이 바로 사용)
         {
             Console.Write("monster "); // 줄바꿈을 하지 않음
             Console.WriteLine("is a World!!");    // 줄바꿈을 합니다.

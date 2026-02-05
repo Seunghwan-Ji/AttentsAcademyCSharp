@@ -13,6 +13,7 @@
         static void Main(string[] args)
         {
             object obj = 123.43f;
+            // object: 모든 타입의 최상위 부모 타입
 
             obj = "Monster";
 

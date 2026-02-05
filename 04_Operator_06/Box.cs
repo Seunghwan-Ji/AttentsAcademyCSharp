@@ -10,12 +10,18 @@
             // int inputValue = Console.Read(); // 한 문자 입력
 
             int inputValue = 0;
-            
+
+            // 예외 처리문
             try
             {
+                // 예외가 발생할 수 있는 코드.
                 inputValue = int.Parse(inputStr);
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
+            // Exception: 모든 예외의 부모 클래스.
+            // ex: 발생한 예외 객체.
             {
+                // 예외가 발생했을 때 실행.
                 Console.WriteLine(ex.ToString());
             }
 

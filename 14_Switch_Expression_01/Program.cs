@@ -2,10 +2,12 @@
 {
     internal class Program
     {
-        public static string GetGrade(int score)
+        public static string GetGrade(int score, bool appendScore)
         {
             switch (score)
             {
+                case 90 when appendScore:
+                    return "A+";
                 case 90:
                     return "A";
 
@@ -58,7 +60,7 @@
 
             Console.WriteLine($"grade = {grade}");
 
-            grade = GetGrade(score);
+            grade = GetGrade(score, appendScore);
             Console.WriteLine($"grade = {grade}");
         }
     }
