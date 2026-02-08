@@ -8,7 +8,7 @@
             int randValue = 0;
             int count = 0;
 
-            Random random;
+            Random random; // Random 클래스 타입 변수 선언.
 
         Start:;
 
