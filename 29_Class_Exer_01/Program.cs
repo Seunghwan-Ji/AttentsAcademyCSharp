@@ -55,12 +55,14 @@
             get => _speed;
         }
 
+        // 인자를 받는 생성자를 하나라도 만들면 컴파일러는 기본 생성자를 자동으로 만들어주지 않습니다.
+        // 기본 생성자가 없다는 의미는 아무 인자도 받지 않고 객체를 생성할 수 없다는 의미입니다.
+                
         public SoccerSon() // 기본생성자: 아무인자값도 받지 않는 생성자
         {
             Console.WriteLine($"SoccerSon 기본 생성자");
         }
-
-
+        
         // 인자를 받는 생성자
         public SoccerSon(string name, int age, float weight, float speed, float height, string position)
         {
@@ -112,6 +114,7 @@
             // 생성자에서 처리할 작업이 없으면 안들어도 됩니다.
             // 하지만 생성자는 반드시 필요하기 때문에 컴파일러 자동으로 기본 생성자를 만들어서 추가합니다.
             // 생성자에는 객체 생성될때 선행되어야 하는 작업을 생성자에서 하면 됩니다.
+            
             SoccerSon son = new SoccerSon(); // 기본 생성자 작동
 
             son.Name = "손흥민";
@@ -133,8 +136,6 @@
 
             SoccerSon son3 = new SoccerSon("손흥민3"); // 인자를 1개 받는 생성자 작동
             son3.Info();
-
-
         }
     }
 }
