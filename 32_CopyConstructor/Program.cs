@@ -13,7 +13,7 @@
         // 인자를 받는 생성자
         public A(int value)
         {
-            Console.WriteLine("A Type 인자를 받는 생성자");
+            Console.WriteLine("A Type 인자를 받는 생성자");          
             _value = value;
         }
 

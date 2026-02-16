@@ -1,11 +1,12 @@
 ﻿namespace _40_Inheritance_Specialization
 {
+    // 열거체를 활용한 상속.
     enum AnimalType
     {
         Pig,
         Cow,
         Chicken,
-        Dolphin
+        Dolphin,
     }
 
     class Animal
@@ -108,7 +109,7 @@
 
         public void Info()
         {
-            Console.Write($"이름: {_name}, 몸무게: {_weight},  나이: {_age}, 건강지수: {GetHealth()}");
+            Console.Write($"이름: {_name}, 몸무게: {_weight}, 나이: {_age}, 건강지수: {GetHealth()}");
         }
     }
 

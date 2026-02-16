@@ -2,6 +2,7 @@
 {
     // this: 클래스의 현재 인스턴스를 가리키는 키워드.
     // this constructor
+    // constructor 뜻: 생성자.
     class Monster
     { 
         private int _health, _attack, _defense; // 멤버필드
@@ -12,10 +13,10 @@
             this._health = 100;
         }
 
-        public Monster(int attach) : this() // Monster(int) 생성자를 호출하면서 기본 생성자(this())를 호출.
+        public Monster(int attack) : this() // Monster(int) 생성자를 호출하면서 기본 생성자(this())를 호출.
         {
             Console.WriteLine("인자 1개를 받는 생성자");
-            this._attack = _attack;
+            this._attack = attack;
         }
 
         public Monster(int attack, int defense) : this(attack)

@@ -77,7 +77,8 @@
         // 인자를 받는 생성자
         public Pig(string name, float weight, float height, float age, float healthRate)
             : base(name, weight, height, age, healthRate)
-        {            
+            // base: 부모 클래스의 생성자 호출.
+        {
         }
 
         public new void Speak() // new: 부모 함수를 새로 정의. (안 붙여도됨)

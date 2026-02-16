@@ -1,5 +1,7 @@
 ﻿namespace _33_StaticMember
 {
+    // 프로퍼티: 클래스의 멤버필드에 접근할 수 있는 특별한 메소드입니다.
+
     class Student
     {
         private string _name; // 일반 멤버필드
@@ -47,6 +49,8 @@
 
     internal class Program
     {
+
+        // 정적 멤버는 객체의 생성과는 무관하게 존재하는 멤버입니다.
         static Student CreateStudent(string name, int grade, int classNum)
         {
             Student st = new Student(name, grade, classNum);

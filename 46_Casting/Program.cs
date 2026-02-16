@@ -58,7 +58,8 @@
     {
         static void Main(string[] args)
         {
-            Parent parent1 = new Child(10, 200); // UpCasting : 자식타입의 객체를 부모의 타입으로 받는 것
+            // UpCasting : 자식타입의 객체를 부모의 타입으로 받는 것.
+            Parent parent1 = new Child(10, 200);            
 
             // 자식타입의 객체를 부모타입으로 받으면
             // 부모타입 참조형변수로 자식객체의 부모의 영역만 접근이 가능합니다.
@@ -73,9 +74,9 @@
             //Child child = new Parent(20); // DownCasting: 부모타입을 자식타입에 대입하는 것
             // 다운캐스팅은 원칙적으로 허용이 안됩니다.
             // 부모는 자식의 영역을 가지고 있지 않습니다.
-
+            
+            // 이렇게는 됨.
             Child cchild = (Child)parent1; // 다운 캐스팅
-
             cchild.Print();
 
             Child2 cchild2 = (Child2)parent2;   // 다운캐스팅

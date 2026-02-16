@@ -17,7 +17,7 @@ namespace _28_Overloading
         }
 
         /*
-         public float add(int a, int b)
+         public float add(int a, int b) // 리턴타입이 다르다고 해서 오버로딩이 성립하지 않습니다.
          {
             return a + b;
          }
@@ -40,7 +40,7 @@ namespace _28_Overloading
 
         public string add(string a, string b)
         {
-            return a + b;
+            return a + b; // 문자열의 덧셈은 문자열을 이어붙이는 연산입니다.
         }
 
     }

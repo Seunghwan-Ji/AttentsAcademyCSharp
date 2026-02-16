@@ -27,7 +27,7 @@
 
             obj = new A(); // C#의 모든 클래스는 Object 타입에서 상속을 받습니다.
                            // UpCasting
-
+            
             ((A)obj)._value = 20; // DownCasting
 
             A a = (A)obj;

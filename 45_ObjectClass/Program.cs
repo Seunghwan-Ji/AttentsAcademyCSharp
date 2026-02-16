@@ -8,7 +8,7 @@ namespace System
       public static bool Equals(Object? objA, Object? objB); // 참조형객체의 경우 참조값을 비교, 값타입 값을 비교
       public static bool ReferenceEquals(Object? objA, Object? objB); // 참조형 값을 비교.
       public virtual bool Equals(Object? obj);
-      public virtual int GetHashCode(); // 특정 인스턴싀를 고유하게 식별할 수 있는 4byte int형 코드값
+      public virtual int GetHashCode(); // 특정 인스턴스를 고유하게 식별할 수 있는 4byte int형 코드값
       public Type GetType(); // 인스턴스에서 타입을 얻어낸다.
       public virtual string? ToString();   // 기본적으로 해당 instance가 속한 클래스의 전체이름 반환한다.
       protected Object MemberwiseClone(); // 객체를 복사할 때 사용 (

@@ -46,7 +46,7 @@
             int b = 30;
 
             int ret = 0;
-            int outret;
+            int outret; // out 키워드로 전달하는 변수는 초기화가 되어있지 않아도 됩니다.
 
             add(a, b, ret);
             Console.WriteLine($"{a} + {b} = {ret}");

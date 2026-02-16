@@ -5,6 +5,7 @@
     // 동물 농장 시뮬레이션
     // 돼지, 소, 닭
 
+    // 부모 클래스에 기본적인 것들을 정의하고, 자식 클래스에서 특수화된 것들을 정의하는 방식으로 구현.
     class Animal
     {
         protected string _name;
@@ -74,6 +75,7 @@
 
         }
 
+        // 부모 클래스의 Speak 메소드를 자식 클래스에서 재정의하여, 돼지에 맞는 소리를 내도록 구현.
         public new void Speak()
         {
             Console.WriteLine($"{_name}가 꿀꿀합니다.");
@@ -89,6 +91,7 @@
 
         }
 
+        // 부모 클래스의 Speak 메소드를 자식 클래스에서 재정의하여, 소에 맞는 소리를 내도록 구현.
         public new void Speak()
         {
             Console.WriteLine($"{_name}가 음매합니다.");
@@ -98,6 +101,7 @@
 
     class Chicken : Animal
     {
+        // 닭은 날 수 있는 닭과 날 수 없는 닭이 있으므로, 날 수 있는지 여부를 나타내는 변수를 추가.
         private bool _isFly;
 
         private void Fly()
@@ -111,11 +115,15 @@
             _isFly = isFly;
         }
 
+        // 부모 클래스의 Speak 메소드를 자식 클래스에서 재정의하여, 닭에 맞는 소리를 내도록 구현.
         public new void Speak()
         {
             Console.WriteLine($"{_name}가 꼬끼오합니다.");
         }
 
+        // 부모 클래스의 Run 메소드를 자식 클래스에서 재정의하여,
+        // 날 수 있는 닭은 Fly 메소드를 호출하고, 날 수 없는 닭은
+        // 부모 클래스의 Run 메소드를 호출하도록 구현.
         public new void Run()
         {
             Fly();
@@ -135,11 +143,14 @@
 
         }
 
+        // 부모 클래스의 Speak 메소드를 자식 클래스에서 재정의하여, 돌고래에 맞는 소리를 내도록 구현.
         public new void Speak()
         {
             Console.WriteLine($"{_name}가 끽끽합니다.");
         }
 
+        // 부모 클래스의 Run 메소드를 자식 클래스에서 재정의하여,
+        // 돌고래는 헤엄치는 동물이므로, Swim 메소드를 호출하도록 구현.
         public new void Run()
         {
             Swim();

@@ -60,6 +60,8 @@ namespace _31_Destructor
             Console.WriteLine($"{Kitty.Name} : {Kitty.Color}");
 
             GC.Collect(); // 가비지 콜렉트를 작동.
+            // 가비지 콜렉터는 메모리에서 더 이상 사용되지 않는 객체를 찾아서 메모리를 해제하는 역할을 합니다.
+            
             Console.ReadLine(); // 멈춤 입력대기
 
             Cat nero = new Cat("네로", "검은색");

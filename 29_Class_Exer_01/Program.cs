@@ -15,10 +15,10 @@
         {
             set
             {
-                _name = value;
+                _name = value; // 일반형(블록형) 문법.
             }
 
-            get => _name;
+            get => _name; // 축약형 문법. get => _name; 는 get { return _name; } 와 동일한 의미입니다.
         }
 
         public int Age
@@ -33,7 +33,7 @@
 
         public float Weight
         {
-            set => _weight = value;
+            set => _weight = value; // 축약형 문법. set => _weight = value; 는 set { _weight = value; } 와 동일한 의미입니다.
             get => _weight;
         }
 
